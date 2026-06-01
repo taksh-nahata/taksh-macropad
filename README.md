@@ -20,13 +20,14 @@ The enclosure is a rigid sandwich-mount design. The 1.6mm PCB is safely housed i
 ## PCB
 The PCB was routed in KiCad using the Hack Club Care Package libraries. Because it is only a 4-key pad, the switches are routed directly to the RP2040 GPIO pins rather than using a diode matrix, keeping the board clean and simple.
 
-**Schematic**
+**Schematic** <br>
+
 <img src="assets/schematic.png" alt="Schematic" width="400"/>
 
 
-**PCB Layout**
+**PCB Layout** <br>
+
 <img src="assets/pcb.png" alt="PCB" width="400"/>
-*(Note: Replace with a screenshot of your KiCad PCB layout)*
 
 ## Firmware Overview
 This board runs on a custom [QMK](https://qmk.fm/) firmware configuration built specifically for the RP2040. 
