@@ -48,4 +48,4 @@ Here is everything required to assemble this macropad:
 - 1x 3D Printed Bottom Case
 - 1x 3D Printed Top Plate
 - 4x M3 Bolts (for clamping the Top Plate to the Bottom Case)
-- 4x M3 Nuts (if not threading directly into the plastic)
+- 4x M3 Nuts
