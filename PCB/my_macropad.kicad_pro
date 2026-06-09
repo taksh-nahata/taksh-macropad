@@ -524,7 +524,7 @@
     "last_paths": {
       "idf": "",
       "netlist": "",
-      "plot": "",
+      "plot": "../macropad/production/",
       "specctra_dsn": "",
       "vrml": ""
     },
@@ -660,7 +660,7 @@
         "uuid": "62eb6348-cb90-4cff-8f58-ce75ab080687"
       }
     ],
-    "used_designators": "",
+    "used_designators": "J1",
     "variants": []
   },
   "sheets": [
