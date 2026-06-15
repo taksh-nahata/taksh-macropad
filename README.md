@@ -43,9 +43,14 @@ Here is everything required to assemble this macropad:
 - 1x 0.91" 128x32 I2C OLED Display
 - 4x Cherry MX-compatible Mechanical Switches
 - 4x Mechanical Keycaps (DSA or OEM profile)
+- 1x Male Header Pins 1x4
+- 2x Male Header Pins 1x7
 
 **Hardware & Enclosure:**
 - 1x 3D Printed Bottom Case
 - 1x 3D Printed Top Plate
 - 4x M3 Bolts (for clamping the Top Plate to the Bottom Case)
 - 4x M3 Nuts
+
+**Tools**
+- Soldering Kit
