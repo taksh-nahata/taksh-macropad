@@ -54,3 +54,16 @@ Here is everything required to assemble this macropad:
 
 **Tools**
 - Soldering Kit
+
+## Assembly Instructions
+- Solder the Seeeduino XIAO, the 4-pin OLED, and the Cherry MX switches to the PCB.
+- Drop the soldered PCB into the 3D-printed Bottom Case (designed with a 0.2mm tolerance for a snug fit).
+- Place the Top Plate over the switches.
+- Clamp the sandwich-mount enclosure together using four M3 bolts and nuts in the corners.
+- Flash the .uf2 firmware via USB-C.
+
+## Why Did I Build It?
+I built this board because I felt like it would be cool to have a device that I could use for my workflow, when I just need to move my cursor around quickly. I also wanted to learn how to design a 3D enclosure, and PCB design.
+
+## What I'd Do Differently
+In the future, if I were to rebuild this, I would likely make the board much larger with more keys, so I could use this for more purposes. I would also want to add a LED Matrix, which I could draw more animations on.
