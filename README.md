@@ -1,4 +1,4 @@
-# Taksh's Macropad
+# Nexus-4
 
 This is a custom 4-key macropad featuring an inverted-T arrow key layout, a 0.91" OLED display, and a fully 3D-printable sandwich-mount case. It is powered by a Seeeduino XIAO RP2040 and runs on custom QMK firmware.
 
