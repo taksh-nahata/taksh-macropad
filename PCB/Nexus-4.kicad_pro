@@ -488,7 +488,7 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "my_macropad.kicad_pro",
+    "filename": "Nexus-4.kicad_pro",
     "version": 3
   },
   "net_settings": {
@@ -524,7 +524,7 @@
     "last_paths": {
       "idf": "",
       "netlist": "",
-      "plot": "../macropad/production/",
+      "plot": "../production/",
       "specctra_dsn": "",
       "vrml": ""
     },
@@ -655,7 +655,7 @@
     "subpart_id_separator": 0,
     "top_level_sheets": [
       {
-        "filename": "my_macropad.kicad_sch",
+        "filename": "Nexus-4.kicad_sch",
         "name": "Root",
         "uuid": "62eb6348-cb90-4cff-8f58-ce75ab080687"
       }

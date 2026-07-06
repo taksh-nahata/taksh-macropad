@@ -1525,7 +1525,7 @@
 			(uuid "83fd08df-4ff3-4d3d-9a5c-a372465bd113")
 		)
 		(instances
-			(project "my_macropad"
+			(project "Nexus-4"
 				(path "/62eb6348-cb90-4cff-8f58-ce75ab080687"
 					(reference "#FLG02")
 					(unit 1)
@@ -1605,7 +1605,7 @@
 			(uuid "56512ecf-20a2-452c-b8a3-0a6337317d77")
 		)
 		(instances
-			(project "my_macropad"
+			(project "Nexus-4"
 				(path "/62eb6348-cb90-4cff-8f58-ce75ab080687"
 					(reference "SW4")
 					(unit 1)
@@ -1685,7 +1685,7 @@
 			(uuid "c346ff90-19fa-4794-8604-0f9554a5678f")
 		)
 		(instances
-			(project "my_macropad"
+			(project "Nexus-4"
 				(path "/62eb6348-cb90-4cff-8f58-ce75ab080687"
 					(reference "SW2")
 					(unit 1)
@@ -1773,7 +1773,7 @@
 			(uuid "c3390ea4-4392-4c83-9624-c1d9a6eb0a83")
 		)
 		(instances
-			(project "my_macropad"
+			(project "Nexus-4"
 				(path "/62eb6348-cb90-4cff-8f58-ce75ab080687"
 					(reference "J1")
 					(unit 1)
@@ -1851,7 +1851,7 @@
 			(uuid "5d9760dd-cc11-4d56-9add-4fba66ff5d1e")
 		)
 		(instances
-			(project "my_macropad"
+			(project "Nexus-4"
 				(path "/62eb6348-cb90-4cff-8f58-ce75ab080687"
 					(reference "#PWR03")
 					(unit 1)
@@ -1929,7 +1929,7 @@
 			(uuid "6eee4ce6-d901-47ac-b006-c481eb5631a7")
 		)
 		(instances
-			(project "my_macropad"
+			(project "Nexus-4"
 				(path "/62eb6348-cb90-4cff-8f58-ce75ab080687"
 					(reference "#PWR02")
 					(unit 1)
@@ -2009,7 +2009,7 @@
 			(uuid "8b65f9c1-2b5c-47d4-b8a6-70387c33a2b2")
 		)
 		(instances
-			(project "my_macropad"
+			(project "Nexus-4"
 				(path "/62eb6348-cb90-4cff-8f58-ce75ab080687"
 					(reference "SW3")
 					(unit 1)
@@ -2089,7 +2089,7 @@
 			(uuid "b3a3f3b3-3752-4ed9-8a21-2baa95007c40")
 		)
 		(instances
-			(project "my_macropad"
+			(project "Nexus-4"
 				(path "/62eb6348-cb90-4cff-8f58-ce75ab080687"
 					(reference "SW1")
 					(unit 1)
@@ -2205,7 +2205,7 @@
 			(uuid "38250ec5-bdf6-46dd-bc19-efa675b9b35f")
 		)
 		(instances
-			(project "my_macropad"
+			(project "Nexus-4"
 				(path "/62eb6348-cb90-4cff-8f58-ce75ab080687"
 					(reference "U1")
 					(unit 1)
@@ -2283,7 +2283,7 @@
 			(uuid "08e07432-99b7-47c8-8c73-d91c35358912")
 		)
 		(instances
-			(project "my_macropad"
+			(project "Nexus-4"
 				(path "/62eb6348-cb90-4cff-8f58-ce75ab080687"
 					(reference "#PWR01")
 					(unit 1)
@@ -2360,7 +2360,7 @@
 			(uuid "120ae9d8-7dba-4c84-bd1e-c6b344d96155")
 		)
 		(instances
-			(project "my_macropad"
+			(project "Nexus-4"
 				(path "/62eb6348-cb90-4cff-8f58-ce75ab080687"
 					(reference "#PWR05")
 					(unit 1)
@@ -2439,7 +2439,7 @@
 			(uuid "1f13913b-1539-4e98-b504-2f1456006904")
 		)
 		(instances
-			(project "my_macropad"
+			(project "Nexus-4"
 				(path "/62eb6348-cb90-4cff-8f58-ce75ab080687"
 					(reference "#PWR06")
 					(unit 1)

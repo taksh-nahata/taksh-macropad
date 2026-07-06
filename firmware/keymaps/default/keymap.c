@@ -41,7 +41,7 @@ bool oled_task_user(void) {
     }
 
     oled_set_cursor(0, 0);
-    oled_write_P(PSTR("Taksh Macropad\n"), false);
+    oled_write_P(PSTR("Nexus-4\n"), false);
 
     switch (current_keycode) {
         case KC_UP:

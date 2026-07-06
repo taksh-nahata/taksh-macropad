@@ -84,7 +84,7 @@
 			(mirror no)
 			(drillshape 0)
 			(scaleselection 1)
-			(outputdirectory "../macropad/production/")
+			(outputdirectory "../production/")
 		)
 	)
 	(footprint "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB"
@@ -143,7 +143,7 @@
 		)
 		(path "/10e202b6-d0e4-44c9-a3c7-170b293b1260")
 		(sheetname "/")
-		(sheetfile "my_macropad.kicad_sch")
+		(sheetfile "Nexus-4.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -435,7 +435,7 @@
 		)
 		(path "/7c8f4169-57fb-4aaa-a1cb-c354e82cf709")
 		(sheetname "/")
-		(sheetfile "my_macropad.kicad_sch")
+		(sheetfile "Nexus-4.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -727,7 +727,7 @@
 		)
 		(path "/5ddf104a-9143-4d5e-ae74-de95b5beca18")
 		(sheetname "/")
-		(sheetfile "my_macropad.kicad_sch")
+		(sheetfile "Nexus-4.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -1014,7 +1014,7 @@
 		(property ki_fp_filters "Connector*:*_1x??_*")
 		(path "/31a808bb-313c-4bdb-8bbd-f7c44e58445f")
 		(sheetname "/")
-		(sheetfile "my_macropad.kicad_sch")
+		(sheetfile "Nexus-4.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -1280,7 +1280,7 @@
 		)
 		(path "/0f60f723-e230-45ab-af10-562b69dd3051")
 		(sheetname "/")
-		(sheetfile "my_macropad.kicad_sch")
+		(sheetfile "Nexus-4.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -1567,7 +1567,7 @@
 		)
 		(path "/7f89f78f-53ea-4427-a418-7cb7b8377b83")
 		(sheetname "/")
-		(sheetfile "my_macropad.kicad_sch")
+		(sheetfile "Nexus-4.kicad_sch")
 		(units
 			(unit
 				(name "A")
