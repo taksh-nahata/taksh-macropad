@@ -1,69 +1,106 @@
 # Nexus-4
 
-This is a custom 4-key macropad featuring an inverted-T arrow key layout, a 0.91" OLED display, and a fully 3D-printable sandwich-mount case. It is powered by a Seeeduino XIAO RP2040 and runs on custom QMK firmware.
+A custom 4-key macropad featuring an inverted-T arrow key layout, a 128x32 OLED display, and a 3D-printed sandwich-mount case. Powered by a Seeed Studio XIAO RP2040 running custom QMK firmware with real-time ASCII face animations.
 
-## Features:
-- Structural 3D-printed sandwich-mount enclosure (Bottom Case + Top Plate).
-- 128x32 OLED Display.
-- 4 mechanical switches arranged in a standard inverted-T layout.
-- Direct-pin GPIO routing for maximum response time.
-- Custom interactive QMK firmware that reacts to keystrokes!
+---
 
-## CAD Model:
-The enclosure is a rigid sandwich-mount design. The 1.6mm PCB is safely housed inside a 13mm thick bottom cavity. A 3mm top plate sits flush on the 10mm outer margins, and the entire assembly is clamped together using four M3 bolts in the extreme corners. It features a side cutout for the XIAO USB-C cable.
+## Completed Build & Demo
 
-<img src="assets/case_assembly.png" alt="Case Assembly" width="500"/>
+<p align="center">
+  <img src="assets/final_build_1.jpg" alt="Finished Nexus-4 Top View" width="48%" />
+  <img src="assets/final_build_2.jpg" alt="Finished Nexus-4 Angle View" width="48%" />
+</p>
 
+### Video Demonstration
+[Watch the Nexus-4 in action](https://drive.google.com/file/d/1Elsz5yWcckBbZZuh22iVLzsOhnGGIkVX/view?usp=sharing)
 
-<img src="assets/overall_view.png" alt="Overall View" width="500"/>
+---
 
-## PCB
-The PCB was routed in KiCad using the Hack Club Care Package libraries. Because it is only a 4-key pad, the switches are routed directly to the RP2040 GPIO pins rather than using a diode matrix, keeping the board clean and simple.
+## Features
+* **Custom 3D-Printed Enclosure:** Two-piece sandwich-mount case (Top Plate + Bottom Enclosure) secured by corner hardware.
+* **Interactive OLED Animation:** 0.91" 128x32 I2C OLED display rendering dynamic ASCII expressions that react to keystroke directions in real-time.
+* **Direct-Pin GPIO Routing:** Low-latency direct pin mapping utilizing RP2040 GPIOs without a matrix diode drop.
+* **QMK Powered:** Full QMK firmware configuration including bootmagic rescue support and custom animation loops.
 
-**Schematic** <br>
+---
 
-<img src="assets/schematic.png" alt="Schematic" width="400"/>
+## Hardware & CAD Design
 
+The enclosure consists of a rigid sandwich-mount structure designed in Autodesk Fusion 360. The 1.6mm PCB rests securely inside the 13mm cavity of the bottom housing, capped by a 3mm top plate and bolted together at the perimeter corners. A dedicated side cutout provides access to the XIAO RP2040's USB-C connector.
 
-**PCB Layout** <br>
+<p align="center">
+  <img src="assets/case_assembly.png" alt="Case Assembly" width="48%" />
+  <img src="assets/overall_view.png" alt="Overall View" width="48%" />
+</p>
 
-<img src="assets/pcb.png" alt="PCB" width="400"/>
+---
 
-## Firmware Overview
-This board runs on a custom [QMK](https://qmk.fm/) firmware configuration built specifically for the RP2040. 
+## PCB & Schematic
 
-- The 4 keys are bound to standard Arrow Keys (`KC_UP`, `KC_DOWN`, `KC_LEFT`, `KC_RIGHT`).
-- The OLED display features a custom C script that renders a sleeping ASCII face. When an arrow key is pressed, a hardware listener intercepts the keystroke and wakes the face up, causing it to look in the direction of the arrow key you pressed!
+The PCB was designed and routed in KiCad using direct-pin connections to simplify the layout and reduce component count.
 
-## BOM (Bill of Materials):
-Here is everything required to assemble this macropad:
+* **Microcontroller:** Seeed Studio XIAO RP2040
+* **Display Interface:** I2C (SDA on `GP6`, SCL on `GP7`)
+* **Switch Routing:**
+  * **Up Switch (SW1):** `GP2` (Pin D8 / SCK)
+  * **Left Switch (SW2):** `GP3` (Pin D10 / MOSI)
+  * **Down Switch (SW3):** `GP4` (Pin D9 / MISO)
+  * **Right Switch (SW4):** `GP1` (Pin D7 / RX)
 
-**Electronics:**
-- 1x Seeeduino XIAO RP2040
-- 1x 0.91" 128x32 I2C OLED Display
-- 4x Cherry MX-compatible Mechanical Switches
-- 4x Mechanical Keycaps (DSA or OEM profile)
-- 1x Male Header Pins 1x4
-- 2x Male Header Pins 1x7
+<p align="center">
+  <img src="assets/schematic.png" alt="Schematic" width="48%" />
+  <img src="assets/pcb.png" alt="PCB Layout" width="48%" />
+</p>
 
-**Hardware & Enclosure:**
-- 1x 3D Printed Bottom Case
-- 1x 3D Printed Top Plate
-- 4x M3 Bolts (for clamping the Top Plate to the Bottom Case)
-- 4x M3 Nuts
+---
 
-**Tools**
-- Soldering Kit
+## Firmware & OLED Logic
 
-## Assembly Instructions
-- Solder the Seeeduino XIAO, the 4-pin OLED, and the Cherry MX switches to the PCB.
-- Drop the soldered PCB into the 3D-printed Bottom Case (designed with a 0.2mm tolerance for a snug fit).
-- Place the Top Plate over the switches.
-- Clamp the sandwich-mount enclosure together using four M3 bolts and nuts in the corners.
-- Flash the .uf2 firmware via USB-C.
+The firmware is compiled with QMK for the RP2040 (`promicro_rp2040` target).
 
-## Why Did I Build It?
-I built this board because I felt like it would be cool to have a device that I could use for my workflow, when I just need to move my cursor around quickly. I also wanted to learn how to design a 3D enclosure, and PCB design.
+Layout:
+* `KC_UP` (Up Arrow)
+* `KC_LEFT` (Left Arrow)
+* `KC_DOWN` (Down Arrow)
+* `KC_RIGHT` (Right Arrow)
 
-## What I'd Do Differently
-In the future, if I were to rebuild this, I would likely make the board much larger with more keys, so I could use this for more purposes. I would also want to add a LED Matrix, which I could draw more animations on.
+* **Keymaps:** Mapped to standard navigation keys (`KC_UP`, `KC_LEFT`, `KC_DOWN`, `KC_RIGHT`).
+* **OLED Engine:** The screen renders an inverted, centered ASCII expression engine. When idle, a breathing sleep animation (`zZz`) cycles continuously. Pressing any key triggers `process_record_user()` to update the active expression in the direction of input (`owo`, `>_<`, `o_o`, `-w-`).
+
+---
+
+## Bill of Materials (BOM)
+
+| Category | Component | Quantity | Notes |
+| :--- | :--- | :--- | :--- |
+| **Electronics** | Seeed Studio XIAO RP2040 | 1 | Surface-soldered via castellations |
+| **Electronics** | 0.91" 128x32 I2C OLED Display | 1 | Flush-mounted using bare pin headers |
+| **Electronics** | Cherry MX-Compatible Switches | 4 | Linear / Tactile switches |
+| **Electronics** | Custom 2-Layer PCB | 1 | Fabricated via JLCPCB |
+| **Hardware** | 3D-Printed Top Plate | 1 | PLA/PETG |
+| **Hardware** | 3D-Printed Bottom Case | 1 | PLA/PETG |
+| **Hardware** | M4 (or M3) Screws & Nuts | 4 | Corner clamp fasteners |
+| **Keycaps** | 1u Keycaps | 4 | DSA or OEM profile |
+
+---
+
+## Assembly & Flashing
+
+1. **Surface-Mount the MCU:** Direct-solder the Seeed XIAO RP2040 flat to the PCB pads using its castellated edges to preserve vertical clearance.
+2. **Mount the OLED:** Strip the plastic collar from the 4-pin header and solder the bare pins flush between the OLED and PCB.
+3. **Mount the Switches:** Seat the 4 switches through the top plate and solder their pins directly to the PCB through-holes.
+4. **Enclosure Assembly:** Drop the PCB assembly into the bottom case and secure the sandwich using four corner bolts and nuts.
+5. **Flash Firmware:**
+   * Enter bootloader mode by holding the **Boot** key or grounding `GP26` (`D0`) on startup to mount the `RPI-RP2` drive.
+   * Compile and copy the `.uf2` file:
+     ```bash
+     qmk compile -kb taksh_macropad -km default
+     ```
+   * Drag and drop `taksh_macropad_default.uf2` into `RPI-RP2`.
+
+---
+
+## Build Retrospective
+
+* **What Went Well:** Learning PCB layout in KiCad, engineering tight vertical clearance solutions (castellated soldering and header trimming), and writing custom display drivers in QMK.
+* **Future Improvements:** Expanding to an 8+ key layout with dedicated rotary encoders and experimenting with a larger graphic LCD or RGB matrix display for multi-frame bitmap animations.
