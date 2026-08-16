@@ -96,7 +96,7 @@ Layout:
      ```bash
      qmk compile -kb taksh_macropad -km default
      ```
-   * Drag and drop `taksh_macropad_default.uf2` into `RPI-RP2`.
+   * Drag and drop `Nexus-4_default` into `RPI-RP2`.
 
 ---
 
