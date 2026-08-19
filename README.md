@@ -1,6 +1,6 @@
-# Nexus-4
+# Nexus-4 (my first piece of hardware)
 
-A custom 4-key macropad featuring an inverted-T arrow key layout, a 128x32 OLED display, and a 3D-printed sandwich-mount case. Powered by a Seeed Studio XIAO RP2040 running custom QMK firmware with real-time ASCII face animations.
+Okay, okay, okay. Let me introduce you to Nexus-4, a custom 4-key macropad. It features an inverted-T arrow key layout, a 128x32 OLED display, and a 3D-printed sandwich-mount case. So I run the the software of this on a Seeed Studio XIAO RP2040 that runs my custom QMK firmware. I've even made some simple ASCII art animations(currently very simple tho)!
 
 ---
 
@@ -9,6 +9,7 @@ A custom 4-key macropad featuring an inverted-T arrow key layout, a 128x32 OLED 
 <p align="center">
   <img src="assets/final_build_1.jpg" alt="Finished Nexus-4 Top View" width="48%" />
   <img src="assets/final_build_2.jpg" alt="Finished Nexus-4 Angle View" width="48%" />
+  <img src="assets/final_build_colored.jpg" alt="Built and colored Nexus-4 Top View">
 </p>
 
 ### Video Demonstration

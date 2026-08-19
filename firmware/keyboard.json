@@ -8,11 +8,12 @@
         "extrakey": true,
         "mousekey": true,
         "nkro": true,
-        "oled": true
+        "oled": true,
+        "wpm": true
     },
     "matrix_pins": {
         "direct": [
-            ["GP4", "GP2", "GP3", "GP1"]
+            ["GP2", "GP3", "GP4", "GP1"]
         ]
     },
     "url": "",
